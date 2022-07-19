@@ -102,9 +102,13 @@ class Neofetch : public Watchy {
 			String wifi = WIFI_CONFIGURED ? "CON" : "DIS";
 
 			display.println(" $ fetch");
+			display.print(" alex")
 			display.setFont(&DejaVu_Sans_Mono_Bold_Nerd_Font_Complete_Mono9pt7b);
-			display.println(" alex@watchy");
+			display.print("@")
+			display.setFont(&DejaVu_Sans_Mono_Nerd_Font_Complete_Mono9pt7b);
+			display.println("watchy")
 			display.println(" ----------------");
+			display.setFont(&DejaVu_Sans_Mono_Bold_Nerd_Font_Complete_Mono9pt7b);
 			display.print(" Time: ");
 			display.setFont(&DejaVu_Sans_Mono_Nerd_Font_Complete_Mono9pt7b);
 			display.println(time);
